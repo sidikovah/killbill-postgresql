@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   killbill:
-    image: killbill/killbill:0.22.20
+    image: killbill/killbill:0.22.26
     ports:
       - "8080:8080"
     environment:
@@ -10,7 +10,7 @@ services:
       - KILLBILL_DAO_PASSWORD=postgres
       - KILLBILL_CATALOG_URI=SpyCarAdvanced.xml
   kaui:
-    image: killbill/kaui:1.0.6
+    image: killbill/kaui:2.0.9
     ports:
       - "9090:8080"
     environment:
